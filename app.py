@@ -11,8 +11,8 @@ import helper
 
 # Setting page layout
 st.set_page_config(
-    page_title="Object Detection using YOLOv8",
-    page_icon="🤖",
+    page_title="Object Detection using YOLOv5",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -22,6 +22,8 @@ st.title("Object Detection using YOLOv8")
 
 # Sidebar
 st.sidebar.header("ML Model Config")
+
+task_selection = st.sidebar.radio("Select Task", ['Drone Detection', 'Powerline'])
 
 # Model Options
 model_type = st.sidebar.radio(
