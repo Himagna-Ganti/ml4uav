@@ -23,7 +23,7 @@ st.title("Object Detection using YOLOv8")
 # Sidebar
 st.sidebar.header("ML Model Config")
 
-task_selection = st.sidebar.radio("Select Task", ['Drone Detection', 'Powerline'])
+task_selection = st.sidebar.radio("Select Task", ['Drone Detection', 'Powerline Detection', 'Powerline Segmentation'])
 
 # Model Options
 model_type = st.sidebar.radio(
